@@ -20,6 +20,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     overflow: hidden;
+    text-align: center;
 }
 .box h2{
     color: rgb(226, 226, 226);
@@ -42,6 +43,12 @@
     background-image: url(../img/logo.png);
     inset: 5px;
     border-radius: 16px;
+}
+.container-arrow{
+    margin-top: 660px;
+    text-align: center;
+    background-color: red;
+    color: white;
 }
 
 /********************FINE BG-INIZIALE-ANIMATO*******************/
