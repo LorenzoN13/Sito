@@ -1,5 +1,5 @@
 /********************INIZIO BG-INIZIALE-ANIMATO*******************/
-.container{
+.container-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,12 +44,32 @@
     inset: 5px;
     border-radius: 16px;
 }
-.container-arrow{
-    margin-top: 660px;
+.box-arrow{
     text-align: center;
-    background-color: red;
-    color: white;
 }
+
+button{
+    margin-top: 30px;
+    background-color: #0e15383f;
+    border-radius: 100%;
+    align-items: center;
+    border: none;
+    animation:pulsate-fwd .5s ease-in-out infinite both
+}
+
+button:hover{
+    background-color: #d400f911;
+}
+
+.fas.fa-sort-down{
+    padding: 19px 20px;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 3px;
+    position:relative;
+}
+
+
 
 /********************FINE BG-INIZIALE-ANIMATO*******************/
 /********************INIZIO NAV*******************/
@@ -83,6 +103,12 @@
 /*********************************
 *   KEYFRAMES 
 ****************/
+
+@keyframes pulsate-fwd{
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
 
 @keyframes bounce-in-fwd{
 0%{transform:scale(0);animation-timing-function:ease-in;opacity:0}
@@ -137,3 +163,4 @@
         transform: rotate(360deg);
     }
 }
+
